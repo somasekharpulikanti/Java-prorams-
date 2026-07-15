@@ -35,21 +35,39 @@
 //    }
 //}
 //Move Zeros to the end
+//class Main{
+//    public static void main(String[]args){
+//        int[] arr = {10,0,2,0,4,5,0};
+//        int index = 0;
+//        for(int i = 0;i<=6;i++){
+//            if(arr[i] != 0){
+//                arr[index] = arr[i];
+//                index++;
+//            }
+//        }
+//        for(int i = index; i<=6;i++){
+//            arr[i] = 0;
+//        }
+//        for(int i =0;i<=6;i++){
+//            System.out.println(arr[i]);
+//
+//        }
+//    }
+//}
+//palindrome
 class Main{
     public static void main(String[]args){
-        int[] arr = {10,0,2,0,4,5,0};
-        int index = 0;
-        for(int i = 0;i<=6;i++){
-            if(arr[i] != 0){
-                arr[index] = arr[i];
-                index++;
-            }
+        int a = 121;
+        int temp  = a;
+        int digit = 0;
+        int rev = 0;
+        while(temp > 0){
+            digit = temp % 10;
+            rev = rev * 10 + digit;
+            temp = temp/10;
         }
-        for(int i = index; i<=6;i++){
-            arr[i] = 0;
-        }
-        for(int i =0;i<=6;i++){
-            System.out.println(arr[i]);
+        if(a == rev){
+            System.out.println(rev);
 
         }
     }
