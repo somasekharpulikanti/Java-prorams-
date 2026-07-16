@@ -84,20 +84,43 @@
 //        System.out.println("Largst Number :" +largest);
 //    }
 //}
-//PRIME NUMBER;
+//PRIME NUMBER Checking;
+//class Main{
+//    public static void main(String[]args){
+//        int num = 7;
+//        int count = 0;
+//        for(int i = 1;i <= num;i++){
+//            if(num % i == 0){
+//                count ++;
+//            }
+//        }
+//        if(count == 2){
+//                System.out.println("Prime Number");
+//            }else{
+//                System.out.println("NoN-Prime Number");
+//            }
+//    }
+//}
+//MOVE NEGATIVES TO THE END
 class Main{
-    public static void main(String[]args){
-        int num = 7;
-        int count = 0;
-        for(int i = 1;i <= num;i++){
-            if(num % i == 0){
-                count ++;
+    public static void main(String[] args){
+        int[] arr = {2,-3,5,-1,8,-7,4};
+        int[] result =new int[arr.length];
+        int index  = 0;
+        for(int i = 0;i<=6;i++){
+            if(arr[i] >= 0){
+                result[index] = arr[i];
+                index ++;
             }
         }
-        if(count == 2){
-                System.out.println("Prime Number");
-            }else{
-                System.out.println("NoN-Prime Number");
-            }
+        for(int i =0;i<=6;i++){
+           if(arr[i] < 0){
+               result[index] = arr[i];
+               index ++;
+           }
+        }
+        for(int i = 0;i<result.length;i++){
+            System.out.println(result[i]+ " ");
+        }
     }
 }
