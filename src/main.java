@@ -102,25 +102,34 @@
 //    }
 //}
 //MOVE NEGATIVES TO THE END
+//class Main{
+//    public static void main(String[] args){
+//        int[] arr = {2,-3,5,-1,8,-7,4};
+//        int[] result =new int[arr.length];
+//        int index  = 0;
+//        for(int i = 0;i<=6;i++){
+//            if(arr[i] >= 0){
+//                result[index] = arr[i];
+//                index ++;
+//            }
+//        }
+//        for(int i =0;i<=6;i++){
+//           if(arr[i] < 0){
+//               result[index] = arr[i];
+//               index ++;
+//           }
+//        }
+//        for(int i = 0;i<result.length;i++){
+//            System.out.println(result[i]+ " ");
+//        }
+//    }
+//}
+//REVERSE ARRAY
 class Main{
-    public static void main(String[] args){
-        int[] arr = {2,-3,5,-1,8,-7,4};
-        int[] result =new int[arr.length];
-        int index  = 0;
-        for(int i = 0;i<=6;i++){
-            if(arr[i] >= 0){
-                result[index] = arr[i];
-                index ++;
-            }
-        }
-        for(int i =0;i<=6;i++){
-           if(arr[i] < 0){
-               result[index] = arr[i];
-               index ++;
-           }
-        }
-        for(int i = 0;i<result.length;i++){
-            System.out.println(result[i]+ " ");
+    public static void main(String[]args){
+        int[] arr = {10,20,30,40,50};
+        for(int i = 4; i>=0;i--){
+            System.out.println(arr[i]);
         }
     }
 }
