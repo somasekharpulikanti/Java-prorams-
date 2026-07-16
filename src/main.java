@@ -125,11 +125,25 @@
 //    }
 //}
 //REVERSE ARRAY
+//class Main{
+//    public static void main(String[]args){
+//        int[] arr = {10,20,30,40,50};
+//        for(int i = 4; i>=0;i--){
+//            System.out.println(arr[i]);
+//        }
+//    }
+//}
+//MISSING NUMBERS IN THE ARRAY
 class Main{
-    public static void main(String[]args){
-        int[] arr = {10,20,30,40,50};
-        for(int i = 4; i>=0;i--){
-            System.out.println(arr[i]);
+    public static void main(String[]args) {
+        int[] arr ={1, 2, 3, 5};
+        int n = 5;
+        int sum = 0;
+        int excepted = n * ((n + 1) / 2);
+        for (int i = 0; i <=3 ; i++) {
+            sum = sum + arr[i];
         }
+        int missing = excepted - sum;
+        System.out.println("Missing Number:" +missing);
     }
 }
