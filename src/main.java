@@ -134,16 +134,41 @@
 //    }
 //}
 //MISSING NUMBERS IN THE ARRAY
+//class Main{
+//    public static void main(String[]args) {
+//        int[] arr ={1, 2, 3, 5};
+//        int n = 5;
+//        int sum = 0;
+//        int excepted = n * ((n + 1) / 2);
+//        for (int i = 0; i <=3 ; i++) {
+//            sum = sum + arr[i];
+//        }
+//        int missing = excepted - sum;
+//        System.out.println("Missing Number:" +missing);
+//    }
+//}
+//REMOVING THE DUPLICATES FROM THE ARRAY
+//class Main{
+//    public static void main(String[]args){
+//        int[]arr = {2, 4, 1, 2, 1, 2, 4, 5};
+//        int index = 0;
+//    }
+//}
+//STRING COMPRESSION
 class Main{
-    public static void main(String[]args) {
-        int[] arr ={1, 2, 3, 5};
-        int n = 5;
-        int sum = 0;
-        int excepted = n * ((n + 1) / 2);
-        for (int i = 0; i <=3 ; i++) {
-            sum = sum + arr[i];
+    public static void main(String[]args){
+        String word = "aaabbccccdd";
+        int count  = 1;
+        for(int i = 0; i<=9;i++){
+            if(word.charAt(i) == word.charAt(i+1)){
+                count ++;
+            }else{
+                System.out.print(word.charAt(i));
+                System.out.print(count);
+                count = 1;
+            }
         }
-        int missing = excepted - sum;
-        System.out.println("Missing Number:" +missing);
+        System.out.print(word.charAt(word.length()-1));
+        System.out.print(count);
     }
 }
