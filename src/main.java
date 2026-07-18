@@ -155,20 +155,40 @@
 //    }
 //}
 //STRING COMPRESSION
-class Main{
-    public static void main(String[]args){
-        String word = "aaabbccccdd";
-        int count  = 1;
-        for(int i = 0; i<=9;i++){
-            if(word.charAt(i) == word.charAt(i+1)){
-                count ++;
-            }else{
-                System.out.print(word.charAt(i));
-                System.out.print(count);
-                count = 1;
-            }
-        }
-        System.out.print(word.charAt(word.length()-1));
-        System.out.print(count);
-    }
-}
+//class Main{
+//    public static void main(String[]args){
+//        String word = "aaabbccccdd";
+//        int count  = 1;
+//        for(int i = 0; i<=9;i++){
+//            if(word.charAt(i) == word.charAt(i+1)){
+//                count ++;
+//            }else{
+//                System.out.print(word.charAt(i));
+//                System.out.print(count);
+//                count = 1;
+//            }
+//        }
+//        System.out.print(word.charAt(word.length()-1));
+//        System.out.print(count);
+//    }
+//}
+//REMOVEING THE DUPLICATES
+//class Main{
+//    public static void main(String[]args){
+//        String word = "programming";
+//        String result = " ";
+//        for(int i = 0; i<word.length();i++){
+//            boolean duplicate = false;
+//            for(int j=0;j<i;j++){
+//                if(word.charAt(i) == word.charAt(j)){
+//                    duplicate = true;
+//                    break;
+//                }
+//            }
+//            if(!duplicate){
+//                result = result + word.charAt(i);
+//            }
+//            System.out.println(result);
+//        }
+//    }
+//}
