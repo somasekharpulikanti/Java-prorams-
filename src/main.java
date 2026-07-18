@@ -192,3 +192,23 @@
 //        }
 //    }
 //}
+//COUNTING THE SPECIAL CHARACTERS
+class Main{
+    public static void main(String[]args){
+        String word = "Hello@123!@#";
+        int count  = 0;
+        for(int i = 0; i<word.length();i++){
+            if(
+           word.charAt(i) >= 'A' && word.charAt(i) <= 'Z'||
+            word.charAt(i) >= 'a' && word.charAt(i) <= 'z'||
+            word.charAt(i) >= '0' && word.charAt(i) <= '9'
+            ){
+                continue;
+            }else {
+                count++;
+
+            }
+        }
+        System.out.println(count);
+    }
+}
