@@ -232,20 +232,34 @@
 //    }
 //}
 // FIND THE FRIST REPEATING ELEMENSTS
+//class Main{
+//    public static  void main(String[]args){
+//        int[] arr = {4,5,1,2,1,4,5};
+//        for(int i = 0; i<arr.length;i++){
+//            int count = 0;
+//            for(int j = 0;j<arr.length;j++){
+//                if(arr[i] == arr[j]){
+//                    count ++;
+//                }
+//            }
+//            if(count == 2){
+//                System.out.println(arr[i]);
+//                break;
+//            }
+//        }
+//    }
+//}
+// ROTATE THE ARRAY
 class Main{
-    public static  void main(String[]args){
-        int[] arr = {4,5,1,2,1,4,5};
-        for(int i = 0; i<arr.length;i++){
-            int count = 0;
-            for(int j = 0;j<arr.length;j++){
-                if(arr[i] == arr[j]){
-                    count ++;
-                }
-            }
-            if(count == 2){
-                System.out.println(arr[i]);
-                break;
-            }
-        }
+    public static void main(String[]args){
+        int[] arr = {1,2,3,4,5};
+       int last  = arr.length;
+       for(int i = arr.length-1;i>0;i--){
+           arr[i] = arr[i-1];
+       }
+       arr[0] =last;
+       for(int i = 0; i<arr.length;i++){
+           System.out.println(arr[i]);
+       }
     }
 }
