@@ -193,22 +193,41 @@
 //    }
 //}
 //COUNTING THE SPECIAL CHARACTERS
+//class Main{
+//    public static void main(String[]args){
+//        String word = "Hello@123!@#";
+//        int count  = 0;
+//        for(int i = 0; i<word.length();i++){
+//            if(
+//           word.charAt(i) >= 'A' && word.charAt(i) <= 'Z'||
+//            word.charAt(i) >= 'a' && word.charAt(i) <= 'z'||
+//            word.charAt(i) >= '0' && word.charAt(i) <= '9'
+//            ){
+//                continue;
+//            }else {
+//                count++;
+//
+//            }
+//        }
+//        System.out.println(count);
+//    }
+//}
+//FIND THE FRIST NON-REPEATING ELEMENTS
 class Main{
     public static void main(String[]args){
-        String word = "Hello@123!@#";
-        int count  = 0;
-        for(int i = 0; i<word.length();i++){
-            if(
-           word.charAt(i) >= 'A' && word.charAt(i) <= 'Z'||
-            word.charAt(i) >= 'a' && word.charAt(i) <= 'z'||
-            word.charAt(i) >= '0' && word.charAt(i) <= '9'
-            ){
-                continue;
-            }else {
-                count++;
-
+        int[] arr = {4,5,1,2,1,4,5};
+        for(int i = 0;i<arr.length;i++){
+            int count = 0;
+            for(int j = 0 ; j<arr.length;j++){
+                if(arr[i] == arr[j]){
+                    count ++ ;
+                }
             }
+        if(count == 0){
+            System.out.println(arr[i]);
+            break;
         }
-        System.out.println(count);
+        }
+
     }
 }
