@@ -268,16 +268,36 @@
 //    }
 //}
 //ROTATE THE ARRAY FROM IN THE LEFT POSITION
+//class Main{
+//    public static void main(String[]args){
+//        int[] arr = {1,2,3,4,5};
+//        int frist = arr[0];
+//        for(int i =0; i<4;i++){
+//            arr[i] = arr[i+1];
+//        }
+//        arr[4] = frist;
+//        for(int i = 0;i<arr.length;i++) {
+//            System.out.println(arr[i]);
+//        }
+//    }
+//}
+//TWO SUM PROBLEM
 class Main{
     public static void main(String[]args){
-        int[] arr = {1,2,3,4,5};
-        int frist = arr[0];
-        for(int i =0; i<4;i++){
-            arr[i] = arr[i+1];
+        int[] arr = {2,7,11,15};
+        int target  = 9;
+        for(int i = 0; i<arr.length;i++){
+
+            for(int j = i+1; j<arr.length;j++){
+
+                if(arr[i]+arr[j] == target){
+                    System.out.println("pair found");
+                    System.out.println(arr[i] + "+" + arr[j] + "=" + target);
+                }else{
+                    System.out.println(arr[i] + "+" + arr[j] + "!=" + target);
+                }
+            }
         }
-        arr[4] = frist;
-        for(int i = 0;i<arr.length;i++) {
-            System.out.println(arr[i]);
-        }
+
     }
 }
