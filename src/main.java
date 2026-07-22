@@ -318,31 +318,55 @@
 //    }
 //}
 //Longest Substring Without Repeating Characters
+//class Main{
+//    public static void main(String[]args){
+//        String str = "abcabcbb";
+//        boolean duplicate = false;
+//        int maxlength = 0;
+//        for(int i = 0;i<str.length();i++){
+//            int count = 0;
+//            for(int j = i;j<str.length();j++){
+//                for(int k = i;k<j;k++){
+//                    if(str.charAt(j) == str.charAt(k)){
+//                        duplicate = true;
+//                        break;
+//                    }
+//                    if(duplicate){
+//                        break;
+//                    }else{
+//                        count ++;
+//                    }
+//                }
+//            }
+//            if(count > maxlength){
+//                maxlength = count;
+//            }
+//        }
+//
+//        System.out.println(maxlength);
+//    }
+//}
+//Palindrome
 class Main{
     public static void main(String[]args){
-        String str = "abcabcbb";
-        boolean duplicate = false;
-        int maxlength = 0;
-        for(int i = 0;i<str.length();i++){
-            int count = 0;
-            for(int j = i;j<str.length();j++){
-                for(int k = i;k<j;k++){
-                    if(str.charAt(j) == str.charAt(k)){
-                        duplicate = true;
-                        break;
-                    }
-                    if(duplicate){
-                        break;
-                    }else{
-                        count ++;
-                    }
-                }
-            }
-            if(count > maxlength){
-                maxlength = count;
-            }
-        }
+        String str = "madam";
+       int start = 0;
+       int end = str.length()-1;
+       boolean palindrome = true;
+       while(start > end){
+           if(str.charAt(start) != str.charAt(end)){
+               palindrome = false;
+               break;
+           }else{
+               start ++;
+               end --;
+           }
+       }
+       if(palindrome){
+           System.out.println("palindrome");
+       }else{
+           System.out.println("not-palindrome");
 
-        System.out.println(maxlength);
+       }
     }
 }
