@@ -282,22 +282,67 @@
 //    }
 //}
 //TWO SUM PROBLEM
+//class Main{
+//    public static void main(String[]args){
+//        int[] arr = {2,7,11,15};
+//        int target  = 9;
+//        for(int i = 0; i<arr.length;i++){
+//
+//            for(int j = i+1; j<arr.length;j++){
+//
+//                if(arr[i]+arr[j] == target){
+//                    System.out.println("pair found");
+//                    System.out.println(arr[i] + "+" + arr[j] + "=" + target);
+//                }else{
+//                    System.out.println(arr[i] + "+" + arr[j] + "!=" + target);
+//                }
+//            }
+//        }
+//
+//    }
+//}
+//class Main{
+//    public static void main(String[]args){
+//        int[] arr = {1,1,2,2,3,4,4};
+//        int i = 0;
+//        for(int j = 1;j<arr.length;j++){
+//            if(arr[i] != arr[j]){
+//                i++;
+//                arr[i] = arr[j];
+//            }
+//        }
+//        for(int k = 0;k<=i;k++){
+//            System.out.println(arr[k]);
+//
+//        }
+//    }
+//}
+//Longest Substring Without Repeating Characters
 class Main{
     public static void main(String[]args){
-        int[] arr = {2,7,11,15};
-        int target  = 9;
-        for(int i = 0; i<arr.length;i++){
-
-            for(int j = i+1; j<arr.length;j++){
-
-                if(arr[i]+arr[j] == target){
-                    System.out.println("pair found");
-                    System.out.println(arr[i] + "+" + arr[j] + "=" + target);
-                }else{
-                    System.out.println(arr[i] + "+" + arr[j] + "!=" + target);
+        String str = "abcabcbb";
+        boolean duplicate = false;
+        int maxlength = 0;
+        for(int i = 0;i<str.length();i++){
+            int count = 0;
+            for(int j = i;j<str.length();j++){
+                for(int k = i;k<j;k++){
+                    if(str.charAt(j) == str.charAt(k)){
+                        duplicate = true;
+                        break;
+                    }
+                    if(duplicate){
+                        break;
+                    }else{
+                        count ++;
+                    }
                 }
+            }
+            if(count > maxlength){
+                maxlength = count;
             }
         }
 
+        System.out.println(maxlength);
     }
 }
