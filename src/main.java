@@ -372,17 +372,35 @@
 //    }
 //}
 //COUNT THE FREQUENCHY OF THE CHARCTER IN A STRING
-class Main{
-    public static void main(String[]args){
-        String str = "programming";
-        for(int i= 0;i<str.length();i++){
-            int count = 0;
-            for(int j=0;j<str.length();j++){
-                if(str.charAt(i) == str.charAt(j)){
-                    count ++;
-                }
-            }
-            System.out.println(str.charAt(i) + "=" + count);
-        }
-    }
-}
+//class Main{
+//    public static void main(String[]args){
+//        String str = "programming";
+//        for(int i= 0;i<str.length();i++){
+//            int count = 0;
+//            for(int j=0;j<str.length();j++){
+//                if(str.charAt(i) == str.charAt(j)){
+//                    count ++;
+//                }
+//            }
+//            System.out.println(str.charAt(i) + "=" + count);
+//        }
+//    }
+//}
+//REMOVE THE DUPLICATES FROM TEH STRING
+//class Main{
+//    public static void main(String[]args){
+//        String str = "programming";
+//        for(int i = 0;i<str.length();i++){
+//            boolean present = false;
+//            for(int j = i+1;j<str.length();j++){
+//                if(str.charAt(i) == str.charAt(j)){
+//                    present =true;
+//                    break;
+//                }
+//            }
+//            if(!present){
+//                System.out.println(str.charAt(i));
+//            }
+//        }
+//    }
+//}
