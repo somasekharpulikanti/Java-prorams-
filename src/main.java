@@ -301,6 +301,7 @@
 //
 //    }
 //}
+//REMOVE DUPLICATES
 //class Main{
 //    public static void main(String[]args){
 //        int[] arr = {1,1,2,2,3,4,4};
@@ -347,26 +348,41 @@
 //    }
 //}
 //Palindrome
+//class Main{
+//    public static void main(String[]args){
+//        String str = "madam";
+//       int start = 0;
+//       int end = str.length()-1;
+//       boolean palindrome = true;
+//       while(start > end){
+//           if(str.charAt(start) != str.charAt(end)){
+//               palindrome = false;
+//               break;
+//           }else{
+//               start ++;
+//               end --;
+//           }
+//       }
+//       if(palindrome){
+//           System.out.println("palindrome");
+//       }else{
+//           System.out.println("not-palindrome");
+//
+//       }
+//    }
+//}
+//COUNT THE FREQUENCHY OF THE CHARCTER IN A STRING
 class Main{
     public static void main(String[]args){
-        String str = "madam";
-       int start = 0;
-       int end = str.length()-1;
-       boolean palindrome = true;
-       while(start > end){
-           if(str.charAt(start) != str.charAt(end)){
-               palindrome = false;
-               break;
-           }else{
-               start ++;
-               end --;
-           }
-       }
-       if(palindrome){
-           System.out.println("palindrome");
-       }else{
-           System.out.println("not-palindrome");
-
-       }
+        String str = "programming";
+        for(int i= 0;i<str.length();i++){
+            int count = 0;
+            for(int j=0;j<str.length();j++){
+                if(str.charAt(i) == str.charAt(j)){
+                    count ++;
+                }
+            }
+            System.out.println(str.charAt(i) + "=" + count);
+        }
     }
 }
