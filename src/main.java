@@ -404,3 +404,19 @@
 //        }
 //    }
 //}
+//LONGEST WORD IN THE STRING SENTENCE
+class Main{
+    public static void main(String[]args){
+        String str = "java is a good programming language";
+        String[] word = str.split(" ");
+        String currentword = " ";
+        String longestword = " ";
+        for(int i = 0;i< word.length;i++){
+            currentword = word[i];
+            if(currentword.length() > longestword.length()){
+                longestword = currentword;
+            }
+        }
+        System.out.println(longestword);
+    }
+}
