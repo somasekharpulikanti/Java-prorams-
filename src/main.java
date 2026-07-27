@@ -421,9 +421,25 @@
 //    }
 //}
 //PRINT THE ASCII VALUESS
+//class Main{
+//    public static void main(String[]args){
+//        char ch = 'A';
+//        System.out.println((int)ch);
+//    }
+//}
+//REMOVE THE VOWELS FROM THE STRING
 class Main{
     public static void main(String[]args){
-        char ch = 'A';
-        System.out.println((int)ch);
+        String Str = "somusekh";
+        String exit = " ";
+        for(int i =0;i<Str.length();i++){
+            char ch = Str.charAt(i);
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+                continue;
+            }else{
+                exit += ch;
+            }
+        }
+        System.out.println(exit);
     }
 }
