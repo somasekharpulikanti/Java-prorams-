@@ -405,18 +405,25 @@
 //    }
 //}
 //LONGEST WORD IN THE STRING SENTENCE
+//class Main{
+//    public static void main(String[]args){
+//        String str = "java is a good programming language";
+//        String[] word = str.split(" ");
+//        String currentword = " ";
+//        String longestword = " ";
+//        for(int i = 0;i< word.length;i++){
+//            currentword = word[i];
+//            if(currentword.length() > longestword.length()){
+//                longestword = currentword;
+//            }
+//        }
+//        System.out.println(longestword);
+//    }
+//}
+//PRINT THE ASCII VALUESS
 class Main{
     public static void main(String[]args){
-        String str = "java is a good programming language";
-        String[] word = str.split(" ");
-        String currentword = " ";
-        String longestword = " ";
-        for(int i = 0;i< word.length;i++){
-            currentword = word[i];
-            if(currentword.length() > longestword.length()){
-                longestword = currentword;
-            }
-        }
-        System.out.println(longestword);
+        char ch = 'A';
+        System.out.println((int)ch);
     }
 }
