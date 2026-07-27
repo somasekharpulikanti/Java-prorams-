@@ -428,18 +428,30 @@
 //    }
 //}
 //REMOVE THE VOWELS FROM THE STRING
+//class Main{
+//    public static void main(String[]args){
+//        String Str = "somusekh";
+//        String exit = " ";
+//        for(int i =0;i<Str.length();i++){
+//            char ch = Str.charAt(i);
+//            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+//                continue;
+//            }else{
+//                exit += ch;
+//            }
+//        }
+//        System.out.println(exit);
+//    }
+//}
+// PATTERNS PATTERNS
+// RIGHT ANGLE TRIANGLE
 class Main{
     public static void main(String[]args){
-        String Str = "somusekh";
-        String exit = " ";
-        for(int i =0;i<Str.length();i++){
-            char ch = Str.charAt(i);
-            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
-                continue;
-            }else{
-                exit += ch;
+        for(int i =0;i<5;i++){
+            for(int j = 0;j<=i;j++){
+                System.out.print("*");
             }
+            System.out.println(" ");
         }
-        System.out.println(exit);
     }
 }
