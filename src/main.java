@@ -455,24 +455,81 @@
 //        }
 //    }
 //}
+// REVERSE RIGHT TRAINGLE ***
 //class Main{
 //    public static void main(String[]args){
-//        for(int i = 5;i>0;i--){
-//            for(int j = 5; j>=i;j--){
+//        for(int i = 5;i>=1;i--){
+//            for(int j = 0 ; j < i;j++){
 //                System.out.print("*");
 //            }
 //            System.out.println(" ");
 //        }
 //    }
 //}
-// REVERSE RIGHT TRAINGLE
+//REVRESE LEFT TRAINGLE
+//class Main{
+//    public static void main(String[]args){
+//        for(int i = 0;i<5;i++){
+//            for(int j = 0;j<i;j++){
+//                System.out.print(" ");
+//            }
+//            for (int k=0;k<5-i;k++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+//PYRAMID TTRAINGLE
+//class Main{
+//    public static void main(String[]args){
+//        for(int i = 0;i<5;i++){
+//            for(int j = 4 ;j>i;j--){
+//                System.out.print(" ");
+//            }
+//            for(int k = 0;k<=2*i;k++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
+//    }
+//}
+// MOST CONSECTIVE 1's
+//class Main{
+//    public  static void main(String[]args){
+//        int[] arr = {1,1,0,1,1,1};
+//        int count = 0;
+//        int max = 0;
+//        for(int i = 0;i<arr.length;i++){
+//            if(arr[i] == 1) {
+//                count++;
+//                if (count > max) {
+//                    max = count;
+//                }
+//            }else{
+//                    count = 0;
+//                }
+//            }
+//        System.out.println(count);
+//        }
+//
+//    }
+//output:3;
+//INTERSECTION VALUES OF THE 2 sets
 class Main{
     public static void main(String[]args){
-        for(int i = 5;i>=1;i--){
-            for(int j = 0 ; j < i;j++){
-                System.out.print("*");
+        int[] set1 = {5,10,15,20,25};
+        int[] set2 = {10,15,30,40,25};
+        int count = 0;
+        for(int i = 0;i<set1.length;i++){
+            for(int j=0;j<set2.length;j++){
+                if(set1[i] == set2[j]){
+                    count ++;
+                    System.out.println(set1[i]);
+                }
             }
-            System.out.println(" ");
         }
+        System.out.println(count);
     }
 }
+//OUPUT : 10,15,25,3
