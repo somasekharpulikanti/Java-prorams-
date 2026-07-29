@@ -516,20 +516,59 @@
 //    }
 //output:3;
 //INTERSECTION VALUES OF THE 2 sets
-class Main{
-    public static void main(String[]args){
-        int[] set1 = {5,10,15,20,25};
-        int[] set2 = {10,15,30,40,25};
-        int count = 0;
-        for(int i = 0;i<set1.length;i++){
-            for(int j=0;j<set2.length;j++){
-                if(set1[i] == set2[j]){
-                    count ++;
-                    System.out.println(set1[i]);
-                }
-            }
-        }
-        System.out.println(count);
-    }
-}
+//class Main{
+//    public static void main(String[]args){
+//        int[] set1 = {5,10,15,20,25};
+//        int[] set2 = {10,15,30,40,25};
+//        int count = 0;
+//        for(int i = 0;i<set1.length;i++){
+//            for(int j=0;j<set2.length;j++){
+//                if(set1[i] == set2[j]){
+//                    count ++;
+//                    System.out.println(set1[i]);
+//                }
+//            }
+//        }
+//        System.out.println(count);
+//    }
+//}
 //OUPUT : 10,15,25,3
+//FIND THE DUPLIACTE
+//class Main{
+//    public static void main(String[] args){
+//        int[] arr = {1,3,4,2,2};
+//        int duplicate = 0;
+//        for(int i = 0;i<arr.length;i++){
+//            for(int j = i +1;j<arr.length;j++){
+//                if(arr[i] == arr[j]){
+//                    duplicate  =arr[i];
+//                }
+//            }
+//        }
+//        System.out.println(duplicate);
+//    }
+//}
+//OUTPUT: 2;
+//FIND THE DIFFERENECE BETWENN THE SAMLLEST AND LARGEST
+//
+//    class main{
+//    public static void main(String[]args){
+//        int[] arr = {12,45,7,89,34};
+//        int largest = arr[0];
+//        int smallest = arr[0];
+//        int diff = 0;
+//        for(int i = 0;i<arr.length;i++){
+//            if(arr[i] > largest){
+//                largest = arr[i];
+//            }
+//        }
+//        for(int i = 0;i<arr.length;i++){
+//            if(arr[i]<smallest){
+//                smallest = arr[i];
+//            }
+//        }
+//        diff = largest - smallest;
+//        System.out.println(diff);
+//    }
+//}
+//OUTPUT : 82;
